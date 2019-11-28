@@ -17,7 +17,6 @@
       :img-src="require('../assets/images/carousel-iceland.jpg')"
     >
     </b-carousel-slide>
-
   </b-carousel>
 </template>
 

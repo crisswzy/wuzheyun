@@ -1,0 +1,46 @@
+{
+  "home": "HOME",
+  "posts": "STORIES",
+  "about me": "ABOUT ME",
+  "lang": "EN",
+  "more": "MORE",
+  "bio": "Hi, this site is built with Vue + Flask on GCE, on which I plan to record life.<br>It's still being developed now, and thus some contents are for test.",
+  "resume": {
+    "name": "ZHEYUN WU",
+    "title": "WEB DEV / BACK-END / WEB CRAWLER",
+    "location": "Shanghai, China",
+    "profile": "PROFILE",
+    "profile-content": "Hi! I'm enthusiastic about IT and Design. I'm a fast learner and easy to communicate with. Enjoy studying principles and a kind of OCD.",
+
+    "skills": "SKILLS",
+
+    "interests": "INTERESTS",
+    "interests-content": "Music<br>Design<br>Photography<br>Sweden & Nordic<br>Magic<br>Swimming",
+
+    "languages": "LANGUAGES",
+    "languages-contents":"Chinese Mandarin<br>Chinese Hokkien Dialect<br>English (IELTS 7 / L:7, R:6.5, W:6.5, S:7)",
+  
+    "education": "EDUCATION EXPERIENCE",
+    "education1-heading": "Tamkang University | Taiwan | 2015 - 2019",
+    "education1-degree": "Bachelor in Information Management",
+    "education1-detail": "GPA: 3.959/4.0, Dept Ranking: 1/206<br>Excellent Graduation System Design (2018)<br>Excellent Academic Performance & Scholarship, TKU (Twice)<br>Excellent Academic Performance, College (Four Times)<br>Ching-sheng Scholarship (Twice)",
+    "education2-heading": "Stockholm University | Sweden | Jan 2019 - Jun 2019 ",
+    "education2-degree": "Exchange Student in DSV, Department of Computer and Systems Sciences",
+    "education-courses": "<b>Core Courses: </b>Calculus, Statistic, C Lang, Programming and Data Structures, Algorithms, Network and Communication, Database Design, Advanced OOP (design patterns), Asp.net Web Programming, Operation Systems, System Analysis and Design, Network Security, Cryptology",
+
+    "internship": "INTERNSHIP EXPERIENCE",
+    "internship1-heading": "Chunghwa Telecom Laboratories | Taiwan | Sep 2018 - Jan 2019",
+    "internship1-position": "KYCheck CRRM System, Department of Data Science",
+    "internship1-detail": "Responsibilities:<ul><li>Development of website automation crawler modules</li><li>Development of anti-crawler detection system modules</li><li>Quality verification test for project's data</li></ul>",
+
+    "project": "PROJECT EXPERIENCE",
+    "project1-heading": "E-Commerce Website www.huilipin.cn | Apr 2019 - May 2019",
+    "project1-position": "MVVM Front-end",
+    "project1-detail": "Responsibilities: <ul><li>Frontend development with Vue</li></ul>", 
+
+    "project2-heading": "Caring Donation Platform | Jul 2018 - Sep 2018",
+    "project2-position": "MVC Back-end",
+    "project2-detail": "Responsibilities:<ul><li>Database design</li><li>Backend development with ThinkPHP</li></ul>"
+
+  }
+}

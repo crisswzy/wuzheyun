@@ -1,0 +1,47 @@
+{
+  "home": "首页",
+  "posts": "故事",
+  "about me": "关于我",
+  "lang": "中文",
+  "more": "更多",
+  "bio": "嗨，这个站点由Vue和Flask搭建在GCE上，希望用来记录生活。<br>目前尚在完善中，因此一些内容是测试用的。",
+  "resume": {
+    "name": "吴哲耘",
+    "title": "WEB开发 / 后端 / 爬虫",
+    "location": "中国上海",
+    "profile": "介绍",
+    "profile-content": "嗨！我热爱IT与设计，有良好的学习能力，容易沟通。喜欢研究原理，有点强迫症。",
+
+    "skills": "技能",
+
+    "interests": "兴趣",
+    "interests-content": "音乐<br>设计<br>摄影<br>瑞典 & 北欧<br>魔术<br>游泳",
+
+    "languages": "语言",
+    "languages-contents":"中文<br>闽南语<br>英语（雅思7 / 听:7, 读:6.5, 写:6.5, 说:7）",
+  
+    "education": "教育经历",
+    "education1-heading": "淡江大学 | 台湾 | 2015 - 2019",
+    "education1-degree": "本科 - 信息管理",
+    "education1-detail": "GPA: 3.959/4.0, 系组排名: 1/206<br>毕业设计佳作（2018）<br>校级学业优异奖学金（2016-2017）<br>院级学业优异奖（2015-2017）<br>惊声奖学金（2017-2018）",
+    "education2-heading": "斯德哥尔摩大学 | 瑞典 | 2019.01 - 2019.06",
+    "education2-degree": "交换生 - 计算机与系统科学系(DSV)",
+    "education-courses": "<b>主要课程: </b>微积分, 统计学, C, 程式设计与数据结构, 算法, 网络与通讯, 数据库设计, 进阶OOP(设计模式), Asp.net网页设计, 操作系统, 系统分析与设计, 网络安全, 密码学",
+
+
+    "internship": "实习经历",
+    "internship1-heading": "中华电信研究院 | 台湾 | 2018.09 - 2019.01",
+    "internship1-position": "KYCheck CRRM系统 数据科学部",
+    "internship1-detail": "负责工作:<ul><li>研发网站自动化爬虫模组</li><li>研发反爬虫侦测系统模组</li><li>协助进行数据品质验证测试工作</li></ul>",
+    
+    "project": "项目经历",
+    "project1-heading": "惠礼品电商网 www.huilipin.cn | 2019.04 - 2019.05",
+    "project1-position": "MVVM前端",
+    "project1-detail": "负责工作: <ul><li>Vue前端开发</li></ul>", 
+
+    "project2-heading": "Caring捐赠平台 | 2018.07 - 2018.09",
+    "project2-position": "MVC后端",
+    "project2-detail": "负责工作: <ul><li>数据库设计</li><li>TP5后端开发</li></ul>"
+
+  }
+}

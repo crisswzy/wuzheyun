@@ -1,25 +1,26 @@
 <template>
   <div id="wuzheyun">
     <!-- HEADER -->
-    <header>
-      <Navbar class="fixed-top"/>
-      <Logo />
+    <header class="fixed-top">
+      <Navbar />
     </header>
 
     <!-- BODY -->
-    <div class="body">
+    <div class="body" style="min-height:960px;">
+      <Brand />
       <router-view />
     </div>
 
     <!-- GO-TO-TOP -->
-    <div id="back-top">
+    <!-- <div id="back-top">
       <a href=""><font-awesome-icon :icon="['fas', 'chevron-up']" size="3x"/></a>
-    </div>
+    </div> -->
 
     <!-- FOOTER -->
     <footer>
       <div>
-        <font-awesome-icon :icon="['far', 'copyright']" size="sm"/> 2019 WUZHEYUN ALL RIGHTS RESERVED
+        <font-awesome-icon :icon="['far', 'copyright']" size="sm" /> 2019
+        WUZHEYUN
       </div>
     </footer>
   </div>
@@ -27,35 +28,31 @@
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import Logo from "./components/Logo.vue";
+import Brand from "./components/Brand.vue";
 
 export default {
   name: "wuzheyun",
   components: {
     Navbar,
-    Logo
+    Brand
   },
   data() {
-    return {
-
-    };
+    return {};
   },
-  mounted () {
+  mounted() {
     // window.addEventListener('scroll', this.handleScroll)
   },
-  destroyed () {
+  destroyed() {
     // window.removeEventListener('scroll', this.handleScroll)
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 
 <style lang="less">
-
 #wuzheyun {
-  font-family: "proximanova-extrabld", "Helvetica Neue", Helvetica, Tahoma, Arial,  // 英文
-  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑",  sans-serif;  // 中文
+  font-family: "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, // 英文
+      "PingFang SC", "Noto Sans SC",  "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif; // 中文
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -67,13 +64,14 @@ export default {
     text-decoration: none;
   }
 
-  .body{
+  .body {
     max-width: 1140px;
     margin: 0 auto;
     a {
       color: #010101;
     }
   }
+
   #back-top {
     position: fixed;
     bottom: 60px;
@@ -82,17 +80,19 @@ export default {
 
     // visibility: hidden;
     // opacity: 0;
-    a{
-      color:#000000;
+    a {
+      color: #000000;
     }
   }
+
   footer {
-    color:#ffffff;
-    margin-top: 80px;
-    padding: 20px 0;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
     background-color: #000000;
     letter-spacing: 4px;
     font-size: 14px;
+    font-weight: 800;
   }
 }
 </style>
