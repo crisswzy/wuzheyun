@@ -31,7 +31,7 @@
     "internship": "INTERNSHIP EXPERIENCE",
     "internship1-heading": "Chunghwa Telecom Laboratories | Taiwan | Sep 2018 - Jan 2019",
     "internship1-position": "KYCheck CRRM System, Department of Data Science",
-    "internship1-detail": "Responsibilities:<ul><li>Development of website automation crawler modules</li><li>Development of anti-crawler detection system modules</li><li>Quality verification test for project's data</li></ul>",
+    "internship1-detail": "Responsibilities:<ul><li>Development of automated web crawler modules (Scrapy)</li><li>Cleaning and quality verification test for project's data</li></ul>",
 
     "project": "PROJECT EXPERIENCE",
     "project1-heading": "Taiwan Aoji Biotech Inc. Bioinformation System | Jan 2020 - Now",
