@@ -4,13 +4,13 @@
   "about me": "关于我",
   "lang": "中文",
   "more": "更多",
-  "bio": "Hi，这个站点由Vue+Flask搭建，纯属兴趣<br>还未完成，有空就来完善，所以有很多内容是测试用的",
+  "bio": "Hi，这个站点由Vue+Flask搭建，纯属兴趣<br>还未完成，有空就来完善，所以有很多内容是测试用的。",
   "resume": {
     "name": "吴哲耘",
     "title": "WEB / 后端 / 爬虫 开发",
     "location": "中国上海",
     "profile": "介绍",
-    "profile-content": "嗨！我来自福建泉州，热爱IT，喜欢设计但我不会，有点强迫症。计划2020去北欧读研，感兴趣网络通讯、SDN/NFV方向",
+    "profile-content": "嗨！我来自福建泉州，热爱IT，喜欢设计但我不会，强迫症。计划2020读研，感兴趣网络通讯、SDN/NFV方向。",
 
     "skills": "技能",
 
@@ -32,20 +32,20 @@
     "internship": "实习经历",
     "internship1-heading": "中华电信研究院 | 台湾 | 2018.09 - 2019.01",
     "internship1-position": "KYCheck CRRM系统 数据科学部",
-    "internship1-detail": "负责工作:<ul><li>自动化爬虫模组开发</li><li>协助进行数据品质验证测试工作</li></ul>",
+    "internship1-detail": "负责工作:<ul><li>自动化爬虫模组开发(Scrapy)</li><li>协助进行数据品质验证测试工作</li></ul>",
     
     "project": "项目经历",
     "project1-heading": "台湾奥基生技有限公司 生物信息系统 | 2020.01 - 现今",
     "project1-position": "后端",
-    "project1-detail": "负责工作: <ul><li>Api开发</li><li>自动化报表生产和管理</li></ul>",
+    "project1-detail": "负责工作: <ul><li>API开发(Flask/Postgres)</li><li>报表自动化生产(Reportlab)</li><li>报表存储管理(Minio)</li></ul>",
 
     "project2-heading": "惠礼品电商网 www.huilipin.cn | 2019.04 - 2019.05",
     "project2-position": "前端",
-    "project2-detail": "负责工作: <ul><li>Vue前端开发</li></ul>", 
+    "project2-detail": "负责工作: <ul><li>前端开发(Vue)</li></ul>", 
 
     "project3-heading": "Caring捐赠平台 | 2018.07 - 2018.09",
     "project3-position": "后端",
-    "project3-detail": "负责工作: <ul><li>数据库设计</li><li>TP5后端开发</li></ul>"
+    "project3-detail": "负责工作: <ul><li>后端开发(ThinkPHP5/MySQL)</li></ul>"
 
   }
 }
