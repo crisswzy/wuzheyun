@@ -1,27 +1,30 @@
 <template>
   <nav>
     <div class="nav-wrapper">
-      <a class="nav-logo" href="#">I NEED A LOGO</a>
-
+      <!-- 左上角LOGO -->
+      <a class="nav-logo" href="http://www.wuzheyun.cn">
+        <img src="../../public/logo.png" alt="logo" />
+      </a>
+      <!-- 移动端的toggle -->
       <div class="nav-toggler">
-        <input type="checkbox">
-          <span id="s1"></span>
-          <span id="s2"></span>
-          <span id="s3"></span>
-          <ul class="nav-menu">
-            <li class="nav-menu-item"><router-link to="/"> {{$t("home")}} </router-link></li>
-            <li class="nav-menu-item"><router-link to="/posts"> {{$t("posts")}} </router-link></li>
-            <li class="nav-menu-item"><router-link to="/about"> {{$t("about me")}} </router-link></li>
-            <li class="nav-menu-item has-sub-menu">
-              <a href="javascript:void(0);"><font-awesome-icon :icon="['fas', 'globe-asia']" size="lg"/> +</a>
-              <ul class="sub-menu">
-                <li class="sub-menu-item"><a href="javascript:void(0);" @click="$i18n.locale='cn'">中文</a></li>
-                <li class="sub-menu-item"><a href="javascript:void(0);" @click="$i18n.locale='en'">ENGLISH</a></li>
-              </ul>
-            </li>
-          </ul>
+        <input type="checkbox" />
+        <span id="s1"></span>
+        <span id="s2"></span>
+        <span id="s3"></span>
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><router-link to="/"> {{$t("home")}} </router-link></li>
+          <li class="nav-menu-item"><router-link to="/posts"> {{$t("posts")}} </router-link></li>
+          <li class="nav-menu-item"><router-link to="/about"> {{$t("about me")}} </router-link></li>
+          <li class="nav-menu-item has-sub-menu">
+            <a href="javascript:void(0);"><font-awesome-icon :icon="['fas', 'globe-asia']" size="lg"/> +</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"><a href="javascript:void(0);" @click="$i18n.locale='cn'">中文</a></li>
+              <li class="sub-menu-item"><a href="javascript:void(0);" @click="$i18n.locale='en'">ENGLISH</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-
+      <!-- 导航菜单 -->
       <div class="nav-collapse">
         <ul class="nav-menu">
           <li class="nav-menu-item"><router-link to="/"> {{$t("home")}} </router-link></li>
@@ -60,7 +63,7 @@ nav {
   font-size: 14px;
   letter-spacing: 4px;
   font-weight: 800;
-  a{
+  a {
     color: #ffffff;
     display: block;
     line-height: 50px;
@@ -69,11 +72,12 @@ nav {
     }
   }
   ul {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     list-style: none;
   }
   .nav-wrapper {
+    height: 100%;
     // 居中
     padding: 0 15px;
     margin: 0 auto;
@@ -86,6 +90,15 @@ nav {
 
     // mobile first: resolution < 767px
     @media (max-width: 767px) {
+      .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
       // 显示toggler
       .nav-toggler {
         z-index: 1;
@@ -222,6 +235,15 @@ nav {
 
     // PC when resolution >= 768px
     @media (min-width: 768px) {
+      .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
       // 隐藏toggler
       .nav-toggler {
         display: none;

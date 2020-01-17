@@ -1,5 +1,6 @@
 <template>
   <b-container fluid class="home-page">
+    <Brand />
     <!-- 图片轮播 -->
     <b-row no-gutters class="mb-4">
       <b-col cols="12">
@@ -123,6 +124,7 @@ import SectionHeader from "@/components/SectionHeader.vue";
 import PostCard from "@/components/PostCard.vue";
 import SocialMedia from "@/components/SocialMedia.vue";
 import axios from "axios";
+import Brand from "@/components/Brand.vue";
 
 export default {
   name: "Home",
@@ -130,7 +132,8 @@ export default {
     Carousel,
     SectionHeader,
     PostCard,
-    SocialMedia
+    SocialMedia,
+    Brand
   },
   data() {
     return {
@@ -161,7 +164,7 @@ export default {
     getPostsList() {
       this.loading = true;
       axios
-        .get("http://www.wuzheyun.cn:88/api/v1/posts")
+        .get("http://www.wuzheyun.cn:9999/api/v1/posts")
         .then(response => {
           if (response.data.success) {
             this.postsList = response.data.data.items;

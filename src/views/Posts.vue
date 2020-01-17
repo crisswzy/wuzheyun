@@ -1,5 +1,6 @@
 <template>
   <b-container fluid class="posts-page">
+    <Brand />
     <b-row>
       <b-col class="main mb-5" cols="12" md="8">
         <SectionHeader type="start" title="ALL POSTS" class="mb-5" />
@@ -26,12 +27,14 @@
 import SectionHeader from "@/components/SectionHeader.vue";
 import PostCard from "@/components/PostCard.vue";
 import axios from "axios";
+import Brand from "@/components/Brand.vue";
 
 export default {
   name: "Posts",
   components: {
     SectionHeader,
-    PostCard
+    PostCard,
+    Brand
   },
   data() {
     return {
@@ -57,7 +60,7 @@ export default {
     getPostsList() {
       this.loading = true;
       axios
-        .get("http://www.wuzheyun.cn:88/api/v1/posts")
+        .get("http://www.wuzheyun.cn:9999/api/v1/posts")
         // .then(response => (this.postsList = response.data.success))
         .then(response => {
           if (response.data.success) {

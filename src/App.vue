@@ -7,7 +7,6 @@
 
     <!-- BODY -->
     <div class="body" style="min-height:960px;">
-      <Brand />
       <router-view />
     </div>
 
@@ -28,13 +27,11 @@
 
 <script>
 import Navbar from "./components/Navbar.vue";
-import Brand from "./components/Brand.vue";
 
 export default {
   name: "wuzheyun",
   components: {
-    Navbar,
-    Brand
+    Navbar
   },
   data() {
     return {};

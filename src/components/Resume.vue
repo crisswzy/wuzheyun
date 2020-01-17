@@ -45,10 +45,10 @@
             <p>Python / Flask / Scrapy
             <br>JavaScript / Vue
             <br>HTML / CSS / Bootstrap4
-            <br>SQL / Linux
+            <br>Linux / Docker / SQL
             <br>PHP / ThinkPHP5
-            <br>Java
-            <br>Excel Adcanced</p>
+            <br>Java / C / Excel Advanced
+            </p>
           </div>
         </section>
         <!-- others -->
@@ -122,6 +122,14 @@
               <i v-html="$t('resume.project2-position')"> ... </i>
             </p>
             <p v-html="$t('resume.project2-detail')">
+              Responsible for: ...
+            </p>
+            <!-- 项目3 -->
+            <h6 class="heading" v-html="$t('resume.project3-heading')"> ... </h6>
+            <p>
+              <i v-html="$t('resume.project3-position')"> ... </i>
+            </p>
+            <p v-html="$t('resume.project3-detail')">
               Responsible for: ...
             </p>
           </div>

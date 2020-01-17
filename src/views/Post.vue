@@ -1,5 +1,6 @@
 <template>
   <b-container fluid class="post-page">
+    <Brand />
     <b-row align-h="center">
       <b-col cols="12" md="10" class="mb-4">
         <SectionHeader type="start" title="ARTICLE" />
@@ -35,11 +36,13 @@
 <script>
 import SectionHeader from "@/components/SectionHeader.vue";
 import axios from "axios";
+import Brand from "@/components/Brand.vue";
 
 export default {
   name: "Post",
   components: {
-    SectionHeader
+    SectionHeader,
+    Brand
   },
   data() {
     return {
@@ -60,7 +63,7 @@ export default {
     getPost() {
       this.loading = true;
       axios
-        .get("http://www.wuzheyun.cn:88/api/v1/posts/" + this.post_id)
+        .get("http://www.wuzheyun.cn:9999/api/v1/posts/" + this.post_id)
         .then(response => {
           if (response.data.success) {
             this.post = response.data.data;

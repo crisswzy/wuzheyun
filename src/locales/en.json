@@ -4,13 +4,13 @@
   "about me": "ABOUT ME",
   "lang": "EN",
   "more": "MORE",
-  "bio": "Hi, this site is built with Vue + Flask on GCE, on which I plan to record life.<br>It's still being developed now, and thus some contents are for test.",
+  "bio": "Hi, this site is built with Vue + Flask for interest.<br>It's still being developed now, and thus some contents are for test.",
   "resume": {
     "name": "ZHEYUN WU",
-    "title": "WEB DEV / BACK-END / WEB CRAWLER",
+    "title": "WEB / BACK-END / CRAWLER DEV.",
     "location": "Shanghai, China",
     "profile": "PROFILE",
-    "profile-content": "Hi! I'm enthusiastic about IT and Design. I'm a fast learner and easy to communicate with. Enjoy studying principles and a kind of OCD.",
+    "profile-content": "Hi! I'm enthusiastic about IT and Design, a sort of OCD. Planning to go to graduate school in 2020.",
 
     "skills": "SKILLS",
 
@@ -34,13 +34,17 @@
     "internship1-detail": "Responsibilities:<ul><li>Development of website automation crawler modules</li><li>Development of anti-crawler detection system modules</li><li>Quality verification test for project's data</li></ul>",
 
     "project": "PROJECT EXPERIENCE",
-    "project1-heading": "E-Commerce Website www.huilipin.cn | Apr 2019 - May 2019",
-    "project1-position": "MVVM Front-end",
-    "project1-detail": "Responsibilities: <ul><li>Frontend development with Vue</li></ul>", 
+    "project1-heading": "Taiwan Aoji Inc. Bioinformation System | Jan 2020 - Now",
+    "project1-position": "Back-end",
+    "project1-detail": "Responsibilities: <ul><li>Api development using Flask</li><li>Automated reports generating and management</li></ul>", 
 
-    "project2-heading": "Caring Donation Platform | Jul 2018 - Sep 2018",
-    "project2-position": "MVC Back-end",
-    "project2-detail": "Responsibilities:<ul><li>Database design</li><li>Backend development with ThinkPHP</li></ul>"
+    "project2-heading": "E-Commerce Website www.huilipin.cn | Apr 2019 - May 2019",
+    "project2-position": "Front-end",
+    "project2-detail": "Responsibilities: <ul><li>Frontend development using Vue</li></ul>", 
+
+    "project3-heading": "Caring Donation Platform | Jul 2018 - Sep 2018",
+    "project3-position": "Back-end",
+    "project3-detail": "Responsibilities:<ul><li>Database design</li><li>Backend development using ThinkPHP</li></ul>"
 
   }
 }
