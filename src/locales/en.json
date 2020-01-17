@@ -36,7 +36,7 @@
     "project": "PROJECT EXPERIENCE",
     "project1-heading": "Taiwan Aoji Biotech Inc. Bioinformation System | Jan 2020 - Now",
     "project1-position": "Back-end",
-    "project1-detail": "Responsibilities: <ul><li>Api development (Flask/Postgres)</li><li>Automated generating of reports (Reportlab)</li>Storage management of reports (Minio)</ul>", 
+    "project1-detail": "Responsibilities: <ul><li>Api development (Flask/Postgres)</li><li>Automated generating of reports (Reportlab)</li><li>Storage management of reports (Minio)</ul>", 
 
     "project2-heading": "E-Commerce Website www.huilipin.cn | Apr 2019 - May 2019",
     "project2-position": "Front-end",
