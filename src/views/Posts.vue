@@ -7,7 +7,7 @@
         <div class="main-body">
           <PostCard
             v-for="post in postsList"
-            :key="post.post_id"
+            :key="post.id"
             v-bind:post="post"
           />
         </div>
@@ -26,8 +26,8 @@
 <script>
 import SectionHeader from "@/components/SectionHeader.vue";
 import PostCard from "@/components/PostCard.vue";
-import axios from "axios";
 import Brand from "@/components/Brand.vue";
+import { getPosts } from "@/API/posts";
 
 export default {
   name: "Posts",
@@ -54,23 +54,15 @@ export default {
   },
   methods: {
     fetchData() {
-      this.getPostsList();
+      this.fetchPosts();
     },
-
-    getPostsList() {
+    fetchPosts() {
       this.loading = true;
-      axios
-        .get("http://www.wuzheyun.cn:9999/api/v1/posts")
-        // .then(response => (this.postsList = response.data.success))
+      getPosts()
         .then(response => {
-          if (response.data.success) {
-            this.postsList = response.data.data.items;
-            this.error = null;
-          } else {
-            this.error = response.data.message;
-          }
+          this.postsList = response.data.items;
         })
-        .catch(error => this.error = error)
+        .catch(error => (this.msg = error.response.data.msg))
         .finally(() => (this.loading = false));
     }
   }

@@ -19,10 +19,10 @@
 
       <b-col cols="12" md="4" class="d-flex justify-content-center ">
         <section class="contact">
+          <div><img src="../assets/earth-globe.svg"><span>www.wuzheyun.cn</span></div>
           <div><img src="../assets/gmail.svg"><span>wuzheyun@126.com</span></div>
           <div><img src="../assets/smartphone.svg"><span>+86 17359582108</span></div>
-          <div><img src="../assets/placeholder.svg"><span>Shanghai, China</span></div>
-          <div><img src="../assets/earth-globe.svg"><span>www.wuzheyun.cn</span></div>
+          <div><img src="../assets/placeholder.svg"><span>Quanzhou / Shanghai, China</span></div>
         </section>
       </b-col>
     </b-row>

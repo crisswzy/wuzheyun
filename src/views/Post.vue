@@ -10,20 +10,23 @@
         <article>
           <header>
             <div class="post-title">
-              <h1>{{ post.post_title }}</h1>
+              <h1>{{ post.title }}</h1>
             </div>
             <div class="post-info">
-              <span>{{ post.post_created_on | moment("MMMM DD, YYYY") }}</span> | <span>by Criss</span>
+              <span>{{ post.created_time | moment("MMMM DD, YYYY") }}</span> | <span>by Criss</span>
             </div>
           </header>
           <!-- 文章主体 -->
           <div class="post-content">
             <!-- <div class="image-container" :style="{ backgroundImage: 'url(' + post.post_cover_image + ')' }">   </div> -->
-            <section v-html="post.post_content">
+            <section v-html="post.content">
               content here
             </section>
           </div>
         </article>
+        <div>
+          <p v-if="msg">{{ msg }}</p>
+        </div>
       </b-col>
 
       <!-- 可扩展为aside -->
@@ -35,8 +38,8 @@
 
 <script>
 import SectionHeader from "@/components/SectionHeader.vue";
-import axios from "axios";
 import Brand from "@/components/Brand.vue";
+import { getPost } from "@/API/posts";
 
 export default {
   name: "Post",
@@ -46,10 +49,9 @@ export default {
   },
   data() {
     return {
-      post_id: this.$route.params.id,
       post: null,
       loading: false,
-      error: null
+      msg: null
     };
   },
   created() {
@@ -57,22 +59,15 @@ export default {
   },
   methods: {
     fetchData() {
-      this.getPost();
+      this.fetchPost();
     },
-
-    getPost() {
+    fetchPost() {
       this.loading = true;
-      axios
-        .get("http://www.wuzheyun.cn:9999/api/v1/posts/" + this.post_id)
+      getPost(this.$route.params.title)
         .then(response => {
-          if (response.data.success) {
-            this.post = response.data.data;
-            this.error = null;
-          } else {
-            this.error = response.data.message;
-          }
+          this.post = response.data;
         })
-        .catch(error => (this.error = error))
+        .catch(error => (this.msg = error.response.data.msg))
         .finally(() => (this.loading = false));
     }
   }

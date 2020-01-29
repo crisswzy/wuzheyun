@@ -165,7 +165,7 @@ nav {
           // 动画
           // transform-origin: 4px 0px;
           
-          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
         }
         span#s1 {
           transform-origin: right top;
@@ -212,7 +212,7 @@ nav {
               // 位置
               position: absolute;
               top: 100%;
-              left:0;
+              left: 0;
               right: 0;
               margin: 0 auto;
               z-index: 999;
@@ -226,7 +226,6 @@ nav {
           }
         }
       }
-      
       // 隐藏PC的menu
       .nav-collapse {
         display: none;

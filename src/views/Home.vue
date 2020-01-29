@@ -31,7 +31,7 @@
           <div class="img-container">
             <img src="../assets/images/design.jpg" alt="design" />
           </div>
-          <div class="text-overlay">DESIGN / ART</div>
+          <div class="text-overlay">DESIGN</div>
         </a>
       </b-col>
     </b-row>
@@ -52,7 +52,7 @@
 
     <!-- 主要内容 -->
     <b-row class="content">
-      <b-col cols="12" md="8" class="mb-5" order=2 order-md=1>
+      <b-col cols="12" md="8" class="mb-5" order="2" order-md="1">
         <!-- 主栏 -->
         <section class="main">
           <SectionHeader type="start" :title="$t('posts')" />
@@ -60,24 +60,24 @@
             <!-- 渲染PostCard -->
             <PostCard
               v-for="post in postsList"
-              :key="post.post_id"
+              :key="post.id"
               v-bind:post="post"
             />
             <!-- '更多'按钮 -->
             <h6 class="text-right" style="font-weight: 800; letter-spacing: 4px;">
-              <router-link to="/posts">{{$t('more')}} >>></router-link>
+              <router-link to="/posts">{{ $t("more") }} >>></router-link>
             </h6>
             <!-- if loading || error -->
             <div>
               <p v-if="loading">Loading...</p>
-              <p v-if="error">{{ error }}</p>
+              <p v-if="msg">{{ msg }}</p>
             </div>
           </div>
         </section>
       </b-col>
 
       <!-- 侧栏 -->
-      <b-col cols="12" md="4" class="mb-5" order=1 order-md=2>
+      <b-col cols="12" md="4" class="mb-5" order="1" order-md="2">
         <aside class="aside">
           <SectionHeader type="center" :title="$t('about me')" />
           <div class="aside-body">
@@ -123,8 +123,8 @@ import Carousel from "@/components/Carousel.vue";
 import SectionHeader from "@/components/SectionHeader.vue";
 import PostCard from "@/components/PostCard.vue";
 import SocialMedia from "@/components/SocialMedia.vue";
-import axios from "axios";
 import Brand from "@/components/Brand.vue";
+import { getPosts } from "@/API/posts";
 
 export default {
   name: "Home",
@@ -140,16 +140,13 @@ export default {
       igList: [],
       postsList: [],
       loading: false,
-      error: null,
-      limit: 5,
-      offset: 0
+      msg: null
     };
   },
   created() {
     // 组件创建完后获取数据，
     // 此时 data 已经被 observed 了
     this.fetchData();
-    // window.addEventListener('scroll', this.onScroll);
   },
   watch: {
     // 如果路由有变化，会再次执行该方法
@@ -157,48 +154,16 @@ export default {
   },
   methods: {
     fetchData() {
-      this.getPostsList();
-      // this.getIgList();
+      this.fetchPosts();
     },
-
-    getPostsList() {
+    fetchPosts() {
       this.loading = true;
-      axios
-        .get("http://www.wuzheyun.cn:9999/api/v1/posts")
+      getPosts()
         .then(response => {
-          if (response.data.success) {
-            this.postsList = response.data.data.items;
-            this.error = null;
-          } else {
-            this.error = response.data.message;
-          }
+          this.postsList = response.data.items;
         })
-        .catch(error => (this.error = error))
+        .catch(error => (this.msg = error.response.data.msg))
         .finally(() => (this.loading = false));
-    },
-
-    getIgList() {
-      var urls = [
-        // "https://www.instagram.com/p/BzCBYmCCpKf/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BzCAhjaCDVy/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/Byv2ib8iTS6/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/Byv6vPziBkd/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BybKxaUiFg9/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/Bxf501MiqsR/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BxV6h8DDN0T/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BxS7H_IjHWw/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BvcGARCj1oF/?utm_source=ig_web_copy_link",
-        // "https://www.instagram.com/p/BuuSLUqjaWp/?utm_source=ig_web_copy_link"
-      ];
-      for (var url of urls) {
-        axios
-          .get("https://api.instagram.com/oembed?url=" + url)
-          .then(response => {
-            if (response) {
-              this.igList.push(response.data);
-            }
-          });
-      }
     }
   }
 };

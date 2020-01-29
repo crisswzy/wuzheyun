@@ -3,20 +3,19 @@
     <b-col class="post-image p-2 p-sm-0" cols="12" sm="5">
       <div
         class="image-container"
-        :style="{ backgroundImage: 'url(' + post.post_cover_image + ')' }"
+        :style="{ backgroundImage: 'url(' + post.cover + ')' }"
       >
         <!-- <img :src="post.post_cover_image"> -->
       </div>
     </b-col>
     <b-col class="post-text text-center text-sm-left " cols="12" sm="7">
-      <span class="category">{{ post.post_category }}</span>
-      <router-link :to="'/post/' + post.post_id">
-        <h3 class="title">{{ post.post_title }}</h3>
+      <span class="category">{{ post.category }}</span>
+      <router-link :to="'/post/' + post.title">
+        <h3 class="title">{{ post.title }}</h3>
       </router-link>
       <div class="other">
-        <span>{{ post.post_created_on | moment("MMMM D, YYYY") }}</span>
+        <span>{{ post.created_time | moment("MMMM D, YYYY") }}</span>
         <!-- <span>{{post.post_views}} views</span> -->
-        <!-- <span>{{post.post_comment_count}} likes</span> -->
       </div>
     </b-col>
   </b-row>
