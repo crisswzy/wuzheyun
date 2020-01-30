@@ -6,7 +6,7 @@
     </header>
 
     <!-- BODY -->
-    <div class="body" style="min-height:960px;">
+    <div class="body" >
       <router-view />
     </div>
 
@@ -18,8 +18,7 @@
     <!-- FOOTER -->
     <footer>
       <div>
-        <font-awesome-icon :icon="['far', 'copyright']" size="sm" /> 2019
-        WUZHEYUN
+        <font-awesome-icon :icon="['far', 'copyright']" size="sm" /> 2020 WUZHEYUN
       </div>
     </footer>
   </div>
@@ -48,24 +47,24 @@ export default {
 
 <style lang="less">
 #wuzheyun {
-  font-family: "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, // 英文
-      "PingFang SC", "Noto Sans SC",  "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif; // 中文
+  font-family: "Montserrat", "Noto Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, // en
+      "PingFang SC", "Noto Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif; // cn
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  text-align: center;
-  // color: #2c3e50;
-  color: #000000;
+  min-height: calc(100vh - 50px);
+  position: relative;
 
-  a {
-    text-decoration: none;
-  }
+  text-align: center;
+  color: #000000;
 
   .body {
     max-width: 1140px;
     margin: 0 auto;
+    padding-bottom: 50px; // 给footer留位置
     a {
-      color: #010101;
+      text-decoration: none;
+      color: #000000;
     }
   }
 
@@ -83,6 +82,10 @@ export default {
   }
 
   footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: #ffffff;
     height: 50px;
     line-height: 50px;

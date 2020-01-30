@@ -37,7 +37,7 @@
     </b-row>
 
     <!-- EMBEDED Instagram -->
-    <b-row fluid class="instagram mb-5">
+    <b-row no-gutters class="instagram mb-5">
       <b-col cols="12">
         <section>
           <SectionHeader type="center" title="INSTAGRAM" />

@@ -64,6 +64,7 @@ nav {
   letter-spacing: 4px;
   font-weight: 800;
   a {
+    text-decoration: none;
     color: #ffffff;
     display: block;
     line-height: 50px;
