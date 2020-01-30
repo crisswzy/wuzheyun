@@ -89,7 +89,7 @@
                     <img
                       src="../assets/avatar.jpg"
                       style="width:100%; height:100%;"
-                      alt="profile-photo"
+                      alt="avatar"
                     />
                   </div>
                 </b-col>
