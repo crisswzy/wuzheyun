@@ -34,7 +34,7 @@
     "internship1-detail": "Responsibilities:<ul><li>Development of automated web crawler modules (Scrapy)</li><li>Cleaning and quality verification test for project's data</li></ul>",
 
     "project": "PROJECT EXPERIENCE",
-    "project1-heading": "Taiwan Aoji Biotech Inc. Bioinformation System | Jan 2020 - Now",
+    "project1-heading": "Bioinformation System of Taiwan OurGene Biotech Inc. | Jan 2020 - Now",
     "project1-position": "Back-end",
     "project1-detail": "Responsibilities: <ul><li>Api development (Flask/Postgres)</li><li>Automated generating of reports (Reportlab)</li><li>Storage management of reports (Minio)</ul>", 
 
