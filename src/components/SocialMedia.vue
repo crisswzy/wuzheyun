@@ -11,30 +11,28 @@
       </div>
     </a>
 
-    <a
-      id="ig"
-      class="has-qrcode"
-      href="https://instagram.com/wuzheyun"
-      target="_blank"
-    >
+    <a id="ig" href="https://instagram.com/wuzheyun" target="_blank">
       <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
-      <div class="qrcode">
+      <!-- <div class="qrcode">
         <img
           src="../assets/ig_qrcode.jpg"
           style="width:100%;"
           alt="ig_qrcode"
         />
-      </div>
+      </div> -->
+    </a>
+
+    <a href="https://github.com/crisswzy/" target="_blank">
+      <font-awesome-icon :icon="['fab', 'github']" size="lg" />
     </a>
 
     <a href="https://www.pinterest.com/wuzheyun/" target="_blank">
       <font-awesome-icon :icon="['fab', 'pinterest']" size="lg" />
     </a>
-    
-    <a href="javascript:void(0);"><font-awesome-icon :icon="['far', 'envelope']" size="lg"/></a>
 
-    <a href="javascript:void(0);"><font-awesome-icon :icon="['fab', 'github']" size="lg"/></a>
-    <!-- <a href=""><font-awesome-icon :icon="['fab', 'facebook-f']" size="lg"/></a> -->
+    <a href="https://twitter.com/wuzheyun" target="_blank">
+      <font-awesome-icon :icon="['fab', 'twitter']" size="lg" />
+    </a>
   </div>
 </template>
 
@@ -60,7 +58,7 @@ export default {
     margin: 0 15px;
     color: #222222;
     img {
-      max-width: 250px;
+      max-width: 200px;
     }
     &:hover {
       svg {
