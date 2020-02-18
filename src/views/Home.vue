@@ -141,7 +141,7 @@ export default {
         "https://www.instagram.com/p/BzCAhjaCDVy/media",
         "https://www.instagram.com/p/Byv2DkuCzN7/media",
         "https://www.instagram.com/p/BybKxaUiFg9/media",
-        "https://www.instagram.com/p/BxV6h8DDN0T/media",
+        "https://www.instagram.com/p/Bx8G67iCO8Y/media",
         "https://www.instagram.com/p/BxTL0UGDts2/media",
         "https://www.instagram.com/p/Bvuz6DWjY6z/media"
       ],
