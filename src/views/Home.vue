@@ -39,14 +39,14 @@
     <!-- EMBEDED Instagram -->
     <b-row no-gutters class="instagram mb-5">
       <b-col cols="12">
-        <section>
-          <SectionHeader type="center" title="INSTAGRAM" />
-          TO BE UPDATED...
-          <div class="ig-body">
-            <div class="image-container" v-for="ig in igList" :key="ig.media_id" :style="{backgroundImage:'url(' + ig.thumbnail_url + ')'}">
+        <SectionHeader type="center" title="INSTAGRAM" />
+        <!-- TO BE UPDATED... -->
+        <b-row class="ig-body" no-gutters>
+          <b-col cols="12" md="12" class="d-flex">
+            <div class="image-container" v-for="ig in igList" :key="ig" :style="{backgroundImage:'url(' + ig + ')'}">
             </div>
-          </div>
-        </section>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
 
@@ -137,7 +137,14 @@ export default {
   },
   data() {
     return {
-      igList: [],
+      igList: [
+        "https://www.instagram.com/p/BzCAhjaCDVy/media",
+        "https://www.instagram.com/p/Byv2DkuCzN7/media",
+        "https://www.instagram.com/p/BybKxaUiFg9/media",
+        "https://www.instagram.com/p/BxV6h8DDN0T/media",
+        "https://www.instagram.com/p/BxTL0UGDts2/media",
+        "https://www.instagram.com/p/Bvuz6DWjY6z/media"
+      ],
       postsList: [],
       loading: false,
       msg: null
@@ -202,15 +209,16 @@ export default {
       }
     }
   }
+
   .instagram {
     .ig-body {
       width: 100%;
       display: flex;
       flex-direction: row;
       .image-container {
-        width: 10%;
+        width: 16.66%;
         height: 0;
-        padding-bottom: 10%;
+        padding-bottom: 16.66%;
 
         background-size: cover;
         background-position: center;
