@@ -6,7 +6,7 @@
     </header>
 
     <!-- BODY -->
-    <div class="body" >
+    <div class="body">
       <router-view />
     </div>
 

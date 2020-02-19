@@ -36,20 +36,6 @@
       </b-col>
     </b-row>
 
-    <!-- EMBEDED Instagram -->
-    <b-row no-gutters class="instagram mb-5">
-      <b-col cols="12">
-        <SectionHeader type="center" title="INSTAGRAM" />
-        <!-- TO BE UPDATED... -->
-        <b-row class="ig-body" no-gutters>
-          <b-col cols="12" md="12" class="d-flex">
-            <div class="image-container" v-for="ig in igList" :key="ig" :style="{backgroundImage:'url(' + ig + ')'}">
-            </div>
-          </b-col>
-        </b-row>
-      </b-col>
-    </b-row>
-
     <!-- 主要内容 -->
     <b-row class="content">
       <b-col cols="12" md="8" class="mb-5" order="2" order-md="1">
@@ -114,6 +100,20 @@
         </aside>
       </b-col>
     </b-row>
+
+    <!-- EMBEDED Instagram -->
+    <b-row no-gutters class="instagram mb-5">
+      <b-col cols="12">
+        <SectionHeader type="center" title="INSTAGRAM" />
+        <!-- TO BE UPDATED... -->
+        <b-row class="ig-body" no-gutters>
+          <b-col cols="12" md="12" class="d-flex">
+            <a class="image-container" v-for="ig in igList" :key="ig" :style="{backgroundImage:'url(' + ig + 'media)'}">
+            </a>
+          </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
@@ -138,12 +138,12 @@ export default {
   data() {
     return {
       igList: [
-        "https://www.instagram.com/p/BzCAhjaCDVy/media",
-        "https://www.instagram.com/p/Byv2DkuCzN7/media",
-        "https://www.instagram.com/p/BybKxaUiFg9/media",
-        "https://www.instagram.com/p/Bx8G67iCO8Y/media",
-        "https://www.instagram.com/p/BxTL0UGDts2/media",
-        "https://www.instagram.com/p/Bvuz6DWjY6z/media"
+        "https://www.instagram.com/p/BzCAhjaCDVy/",
+        "https://www.instagram.com/p/Byv2DkuCzN7/",
+        "https://www.instagram.com/p/BybKxaUiFg9/",
+        "https://www.instagram.com/p/Bx8G67iCO8Y/",
+        "https://www.instagram.com/p/BxTL0UGDts2/",
+        "https://www.instagram.com/p/Bvuz6DWjY6z/"
       ],
       postsList: [],
       loading: false,
@@ -223,6 +223,12 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        transition: 0.5s all;
+
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
