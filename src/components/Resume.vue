@@ -42,12 +42,12 @@
         <section class="py-3 px-2 mb-3">
           <div class="title">{{$t('resume.skills')}}</div>
           <div class="content">
-            <p>Python / Flask / Scrapy
-            <br>JavaScript / Vue
-            <br>HTML / CSS / Bootstrap4
-            <br>Linux / Docker / SQL
-            <br>PHP / ThinkPHP5
-            <br>Java / C / Excel Advanced
+            <p>
+              Python / Flask / Scrapy <br />
+              JavaScript / Vue / Nuxt <br />
+              HTML / CSS / Bootstrap4 <br />
+              Linux / Docker / SQL <br />
+              PHP / Java / C / Excel
             </p>
           </div>
         </section>
